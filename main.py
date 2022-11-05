@@ -32,10 +32,10 @@ def calculate(Input:schemas.Input):
     x = input_request['x']
     y = input_request['y']
 
-    if operation_type in ["+", "-", "*"]:
-        if operation_type == "+":
+    if operation_type in ["addition", "subtraction", "multiplication"]:
+        if operation_type == "addition":
             result = x + y
-        elif operation_type == "-":
+        elif operation_type == "subtraction":
             result = x - y
         else:
             result = x * y 

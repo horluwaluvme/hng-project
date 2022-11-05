@@ -7,7 +7,7 @@ class Input(BaseModel):
     y: int 
 
     class Config:
-        extra = "Error" # I don't want my endpoint accepting surplus values.
+        extra = "forbid" # I don't want my endpoint accepting surplus values.
 
 class Output(BaseModel):
     slackUsername= "femi"
